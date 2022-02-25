@@ -20,7 +20,7 @@ S = "${WORKDIR}/git/server"
 # See http://git.yoctoproject.org/cgit.cgi/poky/plain/meta/conf/bitbake.conf?h=warrior for yocto path prefixes
 FILES_${PN} += "${bindir}/aesdsocket"
 inherit update-rc.d
-INITSCRIPT_PACKAGES= "{PN}"
+INITSCRIPT_PACKAGES= "${PN}"
 INITSCRIPT_NAME_${PN}= "aesdsocket-start-stop.sh"
 
 
